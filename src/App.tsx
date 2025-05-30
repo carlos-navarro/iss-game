@@ -1,4 +1,3 @@
-import React from 'react'
 import InnerSourceGame from './components/InnerSourceGame'
 
 function App() {

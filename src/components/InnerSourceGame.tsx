@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Question from './Question';
 import { OpenSourceLogo, ClosedSourceLogo, InnerSourceLogo } from './LogoIcons';
 import questionsData from '../data/questions.json';
@@ -16,7 +16,7 @@ const InnerSourceGame = () => {
   const [gameCompleted, setGameCompleted] = useState(false);
   const [movingUp, setMovingUp] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
-  const [wiggle, setWiggle] = useState(false);
+  const [wiggle] = useState(false);
   const [isBumping, setIsBumping] = useState(false);
   const [showFireworks, setShowFireworks] = useState(false);
   const [questions, setQuestions] = useState<QuestionType[]>([]);

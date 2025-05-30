@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 
 interface QuestionProps {
   question: {
@@ -12,11 +12,9 @@ interface QuestionProps {
   totalQuestions: number;
 }
 
-const Question: React.FC<QuestionProps> = ({ 
+const Question: FC<QuestionProps> = ({ 
   question, 
-  onAnswer, 
-  questionNumber, 
-  totalQuestions 
+  onAnswer 
 }) => {
   return (
     <div className="bg-slate-900 p-8 rounded-lg mb-6 shadow-lg border border-slate-700">
