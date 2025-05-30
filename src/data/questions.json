@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "text": "InnerSource projects often use open source tools and practices.",
+    "topic": "open_source",
+    "veracity": true
+  },
+  {
+    "id": 2,
+    "text": "InnerSource is a proprietary software development methodology.",
+    "topic": "closed_source",
+    "veracity": true
+  },
+  {
+    "id": 3,
+    "text": "InnerSource encourages collaboration across teams within an organization.",
+    "topic": "open_source",
+    "veracity": true
+  },
+  {
+    "id": 4,
+    "text": "InnerSource is only applicable to open source projects.",
+    "topic": "closed_source",
+    "veracity": false
+  },
+  {
+    "id": 5,
+    "text": "InnerSource can help improve code quality and sharing within a company.",
+    "topic": "open_source",
+    "veracity": true
+  },
+  {
+    "id": 6,
+    "text": "InnerSource keeps intellectual property protected while promoting collaboration.",
+    "topic": "closed_source",
+    "veracity": true
+  },
+  {
+    "id": 7,
+    "text": "InnerSource requires all company code to be public.",
+    "topic": "closed_source",
+    "veracity": false
+  },
+  {
+    "id": 8,
+    "text": "InnerSource always requires strict access controls and permissions.",
+    "topic": "closed_source",
+    "veracity": true
+  },
+    {
+        "id": 9,
+        "text": "InnerSource can lead to better documentation and knowledge sharing.",
+        "topic": "open_source",
+        "veracity": true
+    },
+    {
+        "id": 10,
+        "text": "InnerSource is a methodology that can be applied to any software development process.",
+        "topic": "open_source",
+        "veracity": true
+    },
+    {
+        "id": 11,
+        "text": "InnerSource is a specific programming language.",
+        "topic": "closed_source",
+        "veracity": false
+    },
+    {
+        "id": 12,
+        "text": "InnerSource can help reduce silos and promote cross-team collaboration.",
+        "topic": "open_source",
+        "veracity": true
+    },
+    {
+        "id": 13,
+        "text": "InnerSource is only for large organizations with complex software systems.",
+        "topic": "closed_source",
+        "veracity": false
+    },
+    {
+        "id": 14,
+        "text": "InnerSource can be used to improve internal tools and processes.",
+        "topic": "open_source",
+        "veracity": true
+    }
+]

@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+  25% { transform: translate(-50%, -50%) rotate(5deg); }
+  50% { transform: translate(-50%, -50%) rotate(0deg); }
+  75% { transform: translate(-50%, -50%) rotate(-5deg); }
+}
+
+.logo-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+.logo-move {
+  transition: left 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55), top 1.5s ease;
+}
+
+/* Flame animation */
+@keyframes flicker {
+  0% { transform: scale(1.1); opacity: 0.7; }
+  25% { transform: scale(1.15) rotate(3deg); opacity: 0.8; }
+  50% { transform: scale(1.2) rotate(-2deg); opacity: 1; }
+  75% { transform: scale(1.15) rotate(2deg); opacity: 0.9; }
+  100% { transform: scale(1.1); opacity: 0.7; }
+}
+
+.flame-animation {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,156,0,0.7) 0%, rgba(255,69,0,0.8) 50%, rgba(240,0,0,0.5) 100%);
+  filter: blur(5px);
+  animation: flicker 0.8s infinite alternate;
+  transform-origin: center;
+}
+
+/* Fireworks animation */
+@keyframes explode {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.5); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+.firework {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: explode 1s forwards;
+}
+
+.firework-1 {
+  background: radial-gradient(circle, rgba(255,255,0,1) 0%, rgba(255,255,0,0) 70%);
+  animation-duration: 0.8s;
+  animation-delay: 0.1s;
+}
+
+.firework-2 {
+  background: radial-gradient(circle, rgba(0,255,255,1) 0%, rgba(0,255,255,0) 70%);
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
+
+.firework-3 {
+  background: radial-gradient(circle, rgba(255,0,255,1) 0%, rgba(255,0,255,0) 70%);
+  animation-duration: 1.2s;
+  animation-delay: 0.5s;
+}
+
+/* Bump animation for false answers */
+@keyframes bump {
+  0% { transform: translateX(0) scale(1); }
+  20% { transform: translateX(-10px) scale(0.9); }
+  40% { transform: translateX(15px) scale(1.1); }
+  60% { transform: translateX(-10px) scale(0.95); }
+  80% { transform: translateX(5px) scale(1.05); }
+  100% { transform: translateX(0) scale(1); }
+}
+
+.bump-animation {
+  animation: bump 0.5s ease-in-out;
+}
